@@ -135,7 +135,6 @@ namespace CheckFileExtension
             string fileExt = Path.GetExtension(filePath).ToLower();
 
             List<string> Signatures = ReadSignaturesFromStream(filePath);
-                                     
             List<string> Extensions = MatchExtensionsFromSignatures(Signatures);
              
             if (Extensions.Count(s => s.ToLower().Equals(fileExt)) == 0)
@@ -153,7 +152,7 @@ namespace CheckFileExtension
                     {   //.zip 이라면 Entries[0] 값 ![Content_Types].xml 
                         if (archive.Entries[0].ToString().Contains("[Content_Types].xml"))
                             return false;
-
+                        //return CheckZipFileExtensionFromSignatures(filePath);
                     }
                 }
                 else
@@ -163,20 +162,8 @@ namespace CheckFileExtension
                         if (!archive.Entries[0].ToString().Contains("[Content_Types].xml"))
                             return false;
                     }
-                    
                 }
             }
-                        
-            //if (".zip".Equals(fileExt.ToLower()))
-            //{
-            //    foreach (List<string> strList in ReadZipFileEntriesSignaturesBytes(filePath))
-            //    {
-            //        foreach (string str in strList)
-            //        {
-            //            //Form1.WriteRichTextBoxText(str);
-            //        }
-            //    }
-            //}
 
             return true;
         }
@@ -319,6 +306,5 @@ namespace CheckFileExtension
                 , new FileExtSignatures() { Extension = ".ZIP", Signatures = "50-4B-03-04-14-00-01-00"}
             #endregion
         };
-
     }
 }
