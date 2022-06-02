@@ -15,7 +15,7 @@
 
 
 참조:
-[List of file signatures - Wikipedia﻿](https://en.wikipedia.org/wiki/List_of_file_signatures)
+1) [List of file signatures - Wikipedia﻿](https://en.wikipedia.org/wiki/List_of_file_signatures)
 
-https://filesignatures.net/index.php?search=sig&mode=EXT
+2) https://filesignatures.net/index.php?search=sig&mode=EXT
 
