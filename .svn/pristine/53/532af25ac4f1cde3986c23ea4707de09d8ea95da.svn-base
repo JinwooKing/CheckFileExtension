@@ -48,8 +48,6 @@ namespace CheckFileExtension
             try
             {
                 string filePath = @textBox1.Text;
-                whiteList = @textBox2.Text;
-                blackList = @textBox3.Text;
 
                 if (FileExtensionChk.CheckFileExtensionFromSignatures(filePath))
                 {
@@ -71,6 +69,7 @@ namespace CheckFileExtension
         {
             richTextBox.Text = "";
         }
+
 
         public static void WriteRichTextBoxText(string text)
         {
