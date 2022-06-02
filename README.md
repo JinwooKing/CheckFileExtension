@@ -12,3 +12,10 @@
 1) 파일 확장자 외에 파일 시그니처를 통해 파일을 인식해야 한다.
  
 2) 압축 파일 내에 허용되지 않은 파일 유형이 포함된 경우 허용하지 않아야 한다
+
+
+참조:
+[List of file signatures - Wikipedia﻿](https://en.wikipedia.org/wiki/List_of_file_signatures)
+
+https://filesignatures.net/index.php?search=sig&mode=EXT
+
